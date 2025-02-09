@@ -1,8 +1,12 @@
-import animateTitle from './features/animateTitle'
-import createBadge from './features/createBasge'
-import './styles/style.css'
+import gsap from 'gsap'
 
-console.log('Welcome to Vite + JS + Webflow! wow')
+gsap.to('#test-heading', { x: 100, y: 200, duration: 1 })
+gsap.to('#test-heading', { x: 0, y: 0, duration: 1, delay: 1 })
 
-createBadge()
-animateTitle()
+/*
+  it works
+  still getting errors in the console, not sure what from probably something I had tried previously so gonna have to fix the site
+  pretty psyched to dive into this
+  gonna build out a basic page in webflow to get my feet back under me
+  then start with animating and learning everything I can about gsap and javascript
+*/
